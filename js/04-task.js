@@ -6,13 +6,15 @@ const targetBtnIncrement = document.querySelector(
   'button[data-action="increment"]'
 );
 
-const counterValue = document.querySelector("#value");
-counterValue.innerHTML = 0;
+const maceCounterValue = document.querySelector("#value");
+let counterValue = 0;
 
 targetBtnDecrement.addEventListener("click", () => {
-  counterValue.innerHTML--;
+  counterValue -= 1;
+  maceCounterValue.innerHTML = counterValue;
 });
 
 targetBtnIncrement.addEventListener("click", () => {
-  counterValue.innerHTML++;
+  counterValue += 1;
+  maceCounterValue.innerHTML = counterValue;
 });

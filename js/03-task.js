@@ -25,4 +25,3 @@ const makeUpGaleryElement = (images) => {
 const makeGalary = images.map(makeUpGaleryElement).join("");
 
 imagesEl.insertAdjacentHTML("afterbegin", makeGalary);
-console.log(makeGalary);
